@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery-datepicker.css">
+	<style>
+    	*{
+    		margin:0;
+    		padding:0;
+    	}
+
+    	.datepicker{
+    		border:1px solid #ccc;
+    		border-radius:4px;
+    		padding:5px;
+    		height:24px;
+    		line-height: 24px;
+    		width:230px;
+    	}
+
+    	.datepicker:focus{
+    		outline: 0 none;
+    		border:1px solid #1abc9c;
+    	}
+    </style>
+</head>
+<body>
+	<div id="haha" style="padding:20px;">
+		<input type="text" class="datepicker" id="hehe">
+	</div>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-datepicker.js"></script>
+	<script>
+	$(function(){
+		$('.datepicker').datepicker({
+			'format':'yyyy-mm-dd'
+		});
+	});
+		
+	</script>
+</body>
+</html>
